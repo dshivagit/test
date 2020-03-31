@@ -1,0 +1,84 @@
+git init
+
+git add .
+
+git add file1 file2
+
+git rm file1
+
+git rm --cached file1
+
+git commit -m "comment"
+
+git commit --amend -m "Appending to the last commit"
+
+git diff
+
+git diff --staged
+
+git status
+
+git log
+
+git log --oneline -3
+
+git log -n 2
+
+git log --author="name"
+
+git log --graph --oneline --all --decorate
+
+git log --since="2020-01-10"
+git log --since="1 week ago"
+
+git log --until="2020-01-10"
+
+git log --since="2019-01-10" --until="2020-01-10"
+
+git log --grep="file added" //messages
+
+git log sha1..sha2 //b/w commits
+
+git checkout -- file1.txt
+git checkout ay2d8dj1d -- file1.txt //few chars in specific previous hash code 
+
+git reset HEAD file1.txt //Unstage the staged files
+
+git reset HEAD~1 git reset HEAD~2
+
+git reset --Hard ay2d8dj1d //Reset types: soft, mixed(default), Hard
+
+git reset ay2d8dj1d
+
+git clean -n git clean -f
+
+git ls-tree HEAD git ls-tree master git ls-tree ay2d8dj1d
+
+git branch
+git checkout test
+git checkout -b test
+
+git branch -m new_nav new_navigation //rename the branch name
+git branch -d new_nav //delete branch
+git branch -D new_nav //force delete
+
+git merge feature_branch // checkout to receiver branch & run it
+git merge --no-ff feature_branch //no fastforward
+git merge --ff-only feature_branch //fastforward only, do fastforward only when applies else don't
+
+git merge --abort //rollback merge changes
+
+git stash save "comment"
+git stash list
+git stash show stash@{0} //diff between stash & checkout branch
+git stash show -p stash@{0} //detailed diff between stash & checkout branch
+git stash pop stash@{1} //apply changes & also remove stash from list
+git stash apply stash@{1} //apply changes & maintain copy in stash list
+git stash clear
+git stash drop stash@{1}
+
+git remote 
+git remote -v //verbose mode, will detail about push & fetch git
+git remote add origin https://github.com/dshivagit/test.git
+git push -u origin master
+
