@@ -84,3 +84,8 @@ git push -u origin master
 
 git clone https://github.com/dshivagit/test.git
 git push origin local-name:remote-name
+
+git tag tagname SHA
+git tag -a tagname -m "message" SHA
+git tag --list
+git tag -l -n
