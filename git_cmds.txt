@@ -88,4 +88,8 @@ git push origin local-name:remote-name
 git tag tagname SHA
 git tag -a tagname -m "message" SHA
 git tag --list
-git tag -l -n
+git tag -l -n 
+git tag -ln
+git tag -d tagname
+git push origin --tags //pushes all tags
+git push origin tagName1 
