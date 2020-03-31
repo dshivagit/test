@@ -82,3 +82,4 @@ git remote -v //verbose mode, will detail about push & fetch git
 git remote add origin https://github.com/dshivagit/test.git
 git push -u origin master
 
+git clone https://github.com/dshivagit/test.git
